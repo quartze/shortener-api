@@ -23,7 +23,7 @@ public class OpenAPIConfig {
         return new OpenAPI()
                 .info(new Info()
                                 .title("ShortUrls API")
-                                .version("1.0")
+                                .version("1.1")
                                 .description("Api for manage a short urls")
                         )
                 .components(new Components().addSecuritySchemes("bearerAuth", securityScheme))

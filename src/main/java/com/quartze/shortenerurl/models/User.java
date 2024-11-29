@@ -1,5 +1,6 @@
 package com.quartze.shortenerurl.models;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -31,6 +32,7 @@ public class User {
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "user", fetch = FetchType.LAZY)
     @Getter
     @Setter
+    @JsonBackReference
     @Column(name = "shorts_urls")
     private List<ShortUrls> shortsUrls;
 

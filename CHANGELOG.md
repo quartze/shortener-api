@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.1.1
+* Fixed getting a shorturls in `/me` request causing a huge payload if return.
+
 ## 1.1.0
 * Added Spring Security and secure routes
 * Added CORS settings
